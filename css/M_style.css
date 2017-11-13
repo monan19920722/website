@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#M_main{
+    position: relative;
+}
+.M_part1{
+    background: #f5f5f5;
+}
+.M_part2{
+    background: url("../img/bg_1.jpg");
+    background-size: cover;
+    transition: all 1s;
+}
+.M_part3{
+    background: url("../img/bg_2.jpg");
+}
+.M_part4{
+    background: url("../img/bg_3.jpg");
+}
+.M_part5{
+    background: url("../img/bg_4.jpg");
+    background-size: cover;
+}
+.M_part6{
+    background: url("../img/bg_5.jpg");
+    background-size: cover;
+}
+.M_part7{
+    background: url("../img/bg_6.jpg");
+    background-size: cover;
+}
+.M_part8{
+     background: url("../img/bg_7.jpg");
+     background-size: cover;
+ }
+.M_part9{
+    background: url("../img/bg_8.jpg");
+    background-size: cover;
+}
+.M_part10{
+    background: url("../img/bg_9.jpg");
+    background-size: cover;
+}
+.M_tips{
+    position: fixed;
+    left: 2%;
+    bottom: 3%;
+    z-index: 100;
+}
+.M_tips .M_music,.M_tips .M_search{
+    height: 60px;
+    width: 60px;
+    display: block;
+    float: left;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.M_tips .M_music:hover,.M_tips .M_search:hover{
+    opacity: 1;
+}
+.M_tips .M_music{
+    width: 70px;
+    overflow: hidden;
+}
