@@ -9,13 +9,616 @@
 .M_part1{
     background: #f5f5f5;
 }
-.M_part2{
-    background: url("../img/bg_1.jpg");
-    background-size: cover;
-    transition: all 1s;
+.M_part1 .M_logo{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    margin-left: -118px;
 }
+.M_oneP{
+    position: absolute;
+    width: 640px;
+    left: 50%;
+    top: 57%;
+    margin-left: -320px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.75;
+}
+.M_oneA{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    margin-left: -134px;
+    margin-top: -24px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+    padding: 10px 100px;
+    background-color: #00713d;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+.M_mk{
+    width: 170px;
+    height: 60px;
+    left: 50%;
+    top: 100%;
+    margin-top: -110px;
+    margin-left: -85px;
+    position: absolute;
+}
+.M_mk .M_mouse,.M_mk .M_key{
+    float: left;
+    position: relative;
+}
+.M_mk .M_mouse{
+    margin-right: 44px;
+}
+.M_mk .M_mouse1{
+    background: url("../img/mouse_0.png");
+    width: 33px;
+    height: 58px;
+}
+.M_mk .M_mouse2{
+    background: url("../img/mouse_1.png");
+    width: 33px;
+    height: 58px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.M_mk .M_key1{
+    background: url("../img/key_0.png");
+    width: 93px;
+    height: 60px;
+}
+.M_mk .M_key2{
+    background: url("../img/key_1.png");
+    width: 93px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.M_oneTips{
+    position: absolute;
+    display: block;
+    width: 228px;
+    height: 34px;
+    left: 50%;
+    margin-left: -114px;
+    top: 65px;
+    background: url("../img/tip.png");
+}
+.M_onePic{
+    position: absolute;
+    top: 105px;
+    right: 27px;
+}
+.M_onePic a{
+    display: block;
+    width: 170px;
+    height: 110px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.35);
+    border-radius: 3px;
+    background: url("../img/banner_03.jpg");
+}
+/*part1结束*/
+/*part2开始*/
+.M_part2{
+    /*background: url("../img/bg_1.jpg");
+    background-size: cover;*/
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+.M_P2content{
+    position: absolute;
+    width: 778px;
+    left: 50%;
+    top: 50%;
+    margin-left: -440px;
+    margin-top: -54px;
+    background: url("../img/icon_map.png") 0 center no-repeat;
+    padding-left: 120px;
+}
+.M_P2content h2{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+.M_P2content p{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    font-size: 13px;
+    margin-top: 20px;
+}
+.M_P2_cross{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: url("../img/more.png") -71px 0 ;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.M_P2_cross_inner{
+    position: absolute;
+    top: 0;
+    right: 32px;
+    display: block;
+    width: 0;
+    height: 24px;
+    background: url("../img/more.png") -2px -30px;
+    transition: all 0.5s;
+}
+.M_P2_cross_inner2{
+    width: 81px;
+}
+.M_P2B{
+    width: 1280px;
+    left: 50%;
+    margin-left: -640px;
+    top: 70%;
+    position: absolute;
+    text-align: center;
+    margin-top: -24px;
+}
+.M_P2_Btn{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.75;
+    background-color: #00713d;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    margin: 0px 12px 20px;
+    vertical-align: middle;
+    transition: all 0.5s;
+}
+.M_P2_Btn:hover{
+    background-color: #14965a;
+}
+.M_flyR1,.M_flyR2{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    right: -50%;
+    transition: right 0.5s linear;
+    z-index: 2;
+}
+/*第二部分结束*/
+/*第三部分开始*/
 .M_part3{
     background: url("../img/bg_2.jpg");
+    position: relative;
+}
+.M_P3content{
+    position: absolute;
+    width: 778px;
+    left: 50%;
+    top: 30%;
+    margin-top: -59px;
+    margin-left: -440px;
+    background: url("../img/icon_dot.png") 0 center no-repeat;
+    padding-left: 120px;
+    background-size: contain;
+}
+.M_P3content h2{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+}
+.M_P3content p{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    font-size: 13px;
+    margin-top: 20px;
+}
+.M_P3_cross{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: url("../img/more.png") -71px 0 ;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.M_P3_cross_inner{
+    position: absolute;
+    top: 0;
+    right: 32px;
+    display: block;
+    width: 0;
+    height: 24px;
+    background: url("../img/more.png") -2px -30px;
+    transition: all 0.5s;
+}
+.M_P3_cross_inner2{
+    width: 81px;
+}
+.M_P3map{
+    top: 70%;
+    margin-top: -149px;
+    width: 996px;
+    height: 507px;
+    background: url("../img/map.png") 0 0 no-repeat;
+    left: 50%;
+    margin-left: -498px;
+    position: absolute;
+}
+.M_P3map .M_pic{
+    display: none;
+}
+.M_beimei{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 320px;
+    height: 274px;
+    cursor: pointer;
+}
+.M_ouzhou{
+    position: absolute;
+    top: 6px;
+    left: 451px;
+    width: 150px;
+    height: 209px;
+    cursor: pointer;
+}
+.M_yazhou{
+    position: absolute;
+    top: 128px;
+    right: 112px;
+    width: 312px;
+    height: 300px;
+    cursor: pointer;
+}
+.M_feizhou{
+    position: absolute;
+    top: 190px;
+    left: 432px;
+    width: 186px;
+    height: 207px;
+    cursor: pointer;
+}
+.M_nanmei{
+    position: absolute;
+    top: 260px;
+    left: 201px;
+    width: 157px;
+    height: 227px;
+    cursor: pointer;
+}
+.M_beimei_son,.M_ouzhou_son,.M_yazhou_son,.M_feizhou_son,.M_nanmei_son{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 5;
+}
+.M_dot{
+    position: absolute;
+    z-index: 3;
+}
+.M_dot_bm{
+    top: 100px;
+    left: 160px;
+}
+.M_dot_oz{
+    top: 106px;
+    left: 74px;
+}
+.M_dot_yz{
+    top: 48px;
+    left: 190px;
+}
+.M_dot_fz{
+    top: 101px;
+    left: 119px;
+}
+.M_dot_nm{
+    top: 74px;
+    left: 80px;
+}
+.M_bm1{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    background: rgba(51,204,255,0.65);
+    position: absolute;
+    top: 64px;
+    left: 51px;
+    transition: all 0.3s;
+}
+.M_bm2{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: rgba(51,204,255,0.65);
+    position: absolute;
+    top: 10px;
+    left: 61px;
+    transition: all 0.3s;
+}
+.M_bm3{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: rgba(51,204,255,0.65);
+    position: absolute;
+    top: 140px;
+    left: 173px;
+    transition: all 0.3s;
+}
+.M_bm4{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: rgba(51,204,255,0.65);
+    position: absolute;
+    top: 140px;
+    left: 214px;
+    transition: all 0.3s;
+}
+.M_tips_bm{
+    height: 34px;
+    position: absolute;
+    right: -34px;
+    top: 79px;
+    z-index: 10;
+}
+.M_tips_bm_txt{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(51,204,255,0.65);
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.M_tips_bm_pic{
+    background: url("../img/text_bg_1.jpg");
+    float: left;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.M_oz1{
+    position: absolute;
+    top: 93px;
+    left: -12px;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background: rgba(240,72,72,0.65);
+    transition: all 0.3s;
+}
+.M_oz2{
+    position: absolute;
+    top: 128px;
+    left: 73px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background: rgba(240,72,72,0.65);
+    transition: all 0.3s;
+}
+.M_tips_oz{
+    height: 34px;
+    position: absolute;
+    right: -115px;
+    top: 80px;
+    z-index: 10;
+}
+.M_tips_oz_txt{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(240,72,72,0.65);
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.M_tips_oz_pic{
+    background: url("../img/text_bg_2.jpg");
+    float: left;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.M_yazhou2{
+    width: 150px;
+    height: 166px;
+    position: absolute;
+    top: 260px;
+    right: 102px;
+    z-index: 11;
+}
+.M_tips_yz{
+    height: 34px;
+    position: absolute;
+    right: -78px;
+    top: 22px;
+    z-index: 10;
+}
+.M_tips_yz_txt{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(124,227,21,0.65);
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.M_tips_yz_pic{
+    background: url("../img/text_bg_3.jpg");
+    float: left;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.M_yz2{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: rgba(124,227,21,0.65);
+    position: absolute;
+    top: 6px;
+    left: 142px;
+    transition: all 0.3s;
+}
+.M_yz3{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background: rgba(124,227,21,0.65);
+    position: absolute;
+    top: -28px;
+    left: 141px;
+    transition: all 0.3s;
+}
+.M_yz1{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(124,227,21,0.65);
+    position: absolute;
+    right: 139px;
+    top: 78px;
+    transition: all 0.3s;
+}
+.M_tips_fz{
+    height: 34px;
+    position: absolute;
+    right: -113px;
+    top: 79px;
+    z-index: 10;
+}
+.M_tips_fz_txt{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(255,153,51,0.65);
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.M_tips_fz_pic{
+    background: url("../img/text_bg_4.jpg");
+    float: left;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.M_fz1{
+    position: absolute;
+    top: 61px;
+    left: 52px;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background: rgba(255,153,51,0.65);
+    transition: all 0.3s;
+}
+.M_fz2{
+    position: absolute;
+    top: 138px;
+    left: 96px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background: rgba(255,153,51,0.65);
+    transition: all 0.3s;
+}
+.M_tips_nm{
+    height: 34px;
+    position: absolute;
+    right: -106px;
+    top: 62px;
+    z-index: 10;
+}
+.M_tips_nm_txt{
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    background: rgba(255,204,0,0.65);
+    box-shadow: -1px 1px 2px rgba(0,0,0,0.35);
+    font-size: 14px;
+    display: block;
+    float: left;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.M_tips_nm_pic{
+    background: url("../img/text_bg_5.jpg");
+    float: left;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+.M_nm1{
+    position: absolute;
+    top: 60px;
+    left: 42px;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background: rgba(255,204,0,0.65);
+    transition: all 0.3s;
+}
+.M_nm2{
+    position: absolute;
+    top: 131px;
+    left: 31px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background: rgba(255,204,0,0.65);
+    transition: all 0.3s;
 }
 .M_part4{
     background: url("../img/bg_3.jpg");
